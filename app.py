@@ -32,7 +32,7 @@ def split_sentence(filename, text):
             content.append(str(len(sent)-1) + "\n")
             content.append("----------\n")
         else:
-            content.append(sent)
+            content.append("\n" + sent)
         file = open(newfilename, 'w', encoding="ISO-8859-1")
         file.writelines(content)
         file.close()
